@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import './App.css'
 import Form from './components/Form';
-import Moviecard from "./components/Moviecard";
+import Moviecard from "./components/moviecard/Moviecard";
 
 
 export default function App() {

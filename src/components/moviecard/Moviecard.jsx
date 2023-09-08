@@ -1,4 +1,4 @@
-
+import moviecard from "./moviecard.css"
 
 export default function  Moviecard ({movie}) {
 console.log(movie)
@@ -6,12 +6,19 @@ console.log(movie)
     const loaded = () => {
        
      return (
-         <div>
+         <div className="movie-container">
      <h1>{movie.title}</h1>
-     <h2>{movie.genre_ids}</h2>
-     <p>{movie.overview}</p>
-     <img src={movie.poster_path} alt={movie.title} />
-     <h2>{movie.release_date}</h2>
+     {/* <p>
+     <strong>Genres:</strong>{movie.genre_ids}</p> */}
+     <p><strong>Overview:</strong>{movie.overview}</p>
+     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          alt={movie.title} />
+               <p>
+            <strong>Release Date:</strong> {movie.release_date}
+          </p>
+          <p>
+            <strong>Vote Average:</strong> {movie.vote_average}
+          </p>
      </div>
      )
    }
