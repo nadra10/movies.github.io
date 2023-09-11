@@ -2,6 +2,8 @@ import {useState, useEffect} from "react";
 import './App.css'
 import Form from './components/Form';
 import Moviecard from "./components/moviecard/Moviecard";
+import Home from './components/pages/Home';
+
 
 
 export default function App() {
@@ -40,6 +42,7 @@ export default function App() {
     <div className="App">
       <Form moviesearch={getMovie} />
       < Moviecard movie={movie?.[0]} />
+   <Home />
     </div>
   );
 }
