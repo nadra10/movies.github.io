@@ -1,0 +1,23 @@
+.header-container {
+
+    background-color: #b9ae81;
+    color: #484747;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+.h2 {
+    margin: 0;
+  }
+.span {
+    
+    width: 50%;
+    color: rgb(103, 101, 101);
+    margin: 0;
+}
+h2:hover {
+    color: #f8f7f5;
+    cursor: pointer;
+}
